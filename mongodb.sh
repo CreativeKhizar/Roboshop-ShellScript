@@ -12,9 +12,9 @@ VALIDATE()
 {
     if [ $1 -eq 0 ]
     then
-        echo "$G$2 SUCESS...$N"
+        echo -e "$G$2 SUCESS...$N"
     else
-        echo "$R$2 FAILED...$N"
+        echo -e "$R$2 FAILED...$N"
     fi
 }
 
@@ -22,7 +22,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo "$RERROR: Please run the Script with root access$N"
+    echo -e "$RERROR: Please run the Script with root access$N"
     exit 1
 fi
 
