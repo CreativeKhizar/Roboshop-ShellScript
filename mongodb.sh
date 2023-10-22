@@ -12,7 +12,7 @@ VALIDATE()
 {
     if [ $1 -eq 0 ]
     then
-        echo -e "$G$2 SUCESS...$N"
+        echo -e "$G$2 SUCCESS...$N"
     else
         echo -e "$R$2 FAILED...$N"
     fi
