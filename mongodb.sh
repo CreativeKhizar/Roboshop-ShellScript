@@ -6,7 +6,7 @@ LOGFILE=$LOGDIR/$DATE-$0.log
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
-N="\e0m"
+N="\e[0m"
 
 VALIDATE()
 {
