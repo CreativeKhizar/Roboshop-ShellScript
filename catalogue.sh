@@ -40,9 +40,9 @@ if [ $? -eq 0 ]
 then
     echo -e "$R roboshop user already exists$N"
     exit 1
+else
+   useradd roboshop &>> $LOGFILE
 fi
-
-useradd roboshop &>> $LOGFILE
 
 VALIDATE $? "Adding roboshop catalogue"
 
@@ -56,9 +56,9 @@ if [ $? -eq 0 ]
 then
     echo -e "$R app directory  already exists$N"
     exit 1
+else
+    mkdir /app &>> $LOGFILE
 fi
-
-mkdir /app &>> $LOGFILE
 
 VALIDATE $? "Creating app directory"
 

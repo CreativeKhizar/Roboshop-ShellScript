@@ -56,7 +56,7 @@ VALIDATE $? "Unzipping web.zip"
 
 cp /home/centos/Roboshop-ShellScript/roboshop.conf /etc/nginx/default.d/roboshop.conf &>> $LOGFILE
 
-VALIDATE $? "Copying roboshop.conf to /etc/nginx/defaul.d"
+VALIDATE $? "Copying roboshop.conf to /etc/nginx/default.d"
 
 systemctl restart nginx &>> $LOGFILE
 
