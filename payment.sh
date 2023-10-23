@@ -70,6 +70,8 @@ pip3.6 install -r requirements.txt &>> $LOGFILE
 
 VALIDATE $? "Installing Requirements from requirement.txt"
 
+cp /home/centos/Roboshop-ShellScript/payment.service /etc/systemd/system/payment.service &>> $LOGFILE
+
 systemctl daemon-reload &>> $LOGFILE
 
 VALIDATE $? "Daemon-reload"
