@@ -50,7 +50,7 @@ cd /usr/share/nginx/html &>> $LOGFILE
 
 VALIDATE $? "Navigating to /usr/share/nginx/html"
 
-unzip "/tmp/web.zip"
+unzip "/tmp/web.zip" &>> $LOGFILE
 
 VALIDATE $? "Unzipping web.zip"
 
