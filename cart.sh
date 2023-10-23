@@ -38,7 +38,7 @@ id roboshop &>> $LOGFILE
 
 if [ $? -eq 0 ]
 then
-    echo -e "$R roboshop cart already exists$N"
+    echo -e "$R roboshop user already exists$N"
     exit 1
 fi
 
