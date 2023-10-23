@@ -74,22 +74,22 @@ go get &>> $LOGFILE
 
 VALIDATE $? "go get"
 
-go build
+go build &>> $LOGFILE
 
 VALIDATE $? "go build"
 
-cp /home/centos/Roboshop-ShellScript/dispatch.service /etc/systemd/system/dispatch.service
+cp /home/centos/Roboshop-ShellScript/dispatch.service /etc/systemd/system/dispatch.service &>> $LOGFILE
 
 VALIDATE $? "Copying dispatch.service to systemd directory"
 
-systemctl daemon-reload
+systemctl daemon-reload &>> $LOGFILE
 
 VALIDATE $? "daemon-reload"
 
-systemctl enable dispatch 
+systemctl enable dispatch &>> $LOGFILE
 
-VALIDATE $? "Enable Dispatch"
+VALIDATE $? "Enable Dispatch" 
 
-systemctl start dispatch
+systemctl start dispatch &>> $LOGFILE
 
 VALIDATE $? "Start Dispatch"
