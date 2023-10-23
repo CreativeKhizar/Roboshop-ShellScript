@@ -50,6 +50,10 @@ cd /usr/share/nginx/html &>> $LOGFILE
 
 VALIDATE $? "Navigating to /usr/share/nginx/html"
 
+unzip "/tmp/web.zip"
+
+VALIDATE $? "Unzipping web.zip"
+
 cp /home/centos/Roboshop-ShellScript/roboshop.conf /etc/nginx/default.d/roboshop.conf &>> $LOGFILE
 
 VALIDATE $? "Copying roboshop.conf to /etc/nginx/defaul.d"
