@@ -22,7 +22,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
-    echo -e "$RERROR: Please run the Script with root access$N"
+    echo -e "$R ERROR: Please run the Script with root access$N"
     exit 1
 fi
 

@@ -38,6 +38,14 @@ yum install mysql-community-server -y &>> $LOGFILE
 
 VALIDATE $? "Installing Mysql Server"
 
+systemctl enable mysqld &>> $LOGFILE
+
+VALIDATE $? "Enabling mysqld"
+
+systemctl start mysqld &>> $LOGFILE
+
+VALIDATE $? "Starting mysql"
+
 mysql_secure_installation --set-root-pass RoboShop@1 &>> $LOGFILE
 
-VALIDATE $? "Changing the Password into RoboShop@1"
+VALIDATE $? "Setting the Password RoboShop@1"
