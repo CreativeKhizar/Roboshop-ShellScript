@@ -26,9 +26,6 @@ then
     exit 1
 fi
 
-curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>> $LOGFILE
-
-VALIDATE $? "Downloading Npm Sources"
 
 yum install nodejs -y &>> $LOGFILE
 
