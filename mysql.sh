@@ -1,3 +1,5 @@
+#! /bin/bash
+
 LOGDIR=/tmp
 DATE=$(date +%F:%H:%M:%S)
 
